@@ -1,15 +1,22 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * main - Entry point
+ * print_alphabet_x10 - print small letter alphabet to stdout 10 times
  *
- * Return: Always 0 (Success)
+ * Return: void
  */
 
-int main(void)
+void print_alphabet_x10(void)
 {
-	
-	
-	return(0);
+	int i, j = 0;
+
+	do {
+		for (i = 97; i <= 122; i++)
+		{
+			_putchar(i);
+		}
+		_putchar('\n');
+		j++;
+	} while (j < 10);
 }
 
