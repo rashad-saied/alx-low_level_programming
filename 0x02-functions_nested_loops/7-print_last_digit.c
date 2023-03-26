@@ -1,15 +1,17 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * main - Entry point
+ * print_last_digit - print the last integer of an integer
+ * @x : The integer to be checked
  *
- * Return: Always 0 (Success)
+ * Return: 1 (+ number) , 0 (is zero), -1 (- number)
  */
 
-int main(void)
+int print_last_digit(int x)
 {
-	
-	
-	return(0);
+	int y = x % 10;
+
+	_putchar(y);
+	return (y);
 }
 
