@@ -8,14 +8,12 @@
 
 int main(void)
 {
-	int r, y, u;
-	r = _islower('H');
-	y = _islower('o');
-	u = _islower(108);
+	int r,y;
 
-	_putchar(r);
-	_putchar(y);
-	_putchar(u);
+	r = _isalpha('H');
+	_putchar(r + '0');
+	y = _isalpha('u');
+	_putchar(y + '1');
 	return (0);
 }
 
