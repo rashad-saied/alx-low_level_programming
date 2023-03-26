@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stdio.h>
 /**
  * main - Entry point
  *
@@ -8,9 +8,9 @@
 
 int main(void)
 {
-	print_sign(5);
-	print_sign(-4);
-	print_sign(0);
+	int r = _abs(-1);
+	printf("%d", r);
+
 	return (0);
 }
 
