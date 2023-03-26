@@ -9,6 +9,8 @@
 int main(void)
 {
 	print_last_digit(1245);
+	printf("\n");
+	print_last_digit(-44);
 
 	return (0);
 }
