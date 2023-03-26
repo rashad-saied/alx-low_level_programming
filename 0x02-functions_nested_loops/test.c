@@ -8,8 +8,7 @@
 
 int main(void)
 {
-	int r = _abs(-1);
-	printf("%d", r);
+	print_last_digit(1245);
 
 	return (0);
 }
