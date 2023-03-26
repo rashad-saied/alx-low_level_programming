@@ -11,6 +11,8 @@ int main(void)
 	print_last_digit(1245);
 	printf("\n");
 	print_last_digit(-44);
+	printf("\n");
+	print_last_digit(0);
 
 	return (0);
 }
