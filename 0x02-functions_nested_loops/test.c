@@ -8,7 +8,14 @@
 
 int main(void)
 {
-	print_alphabet_x10();
+	int r, y, u;
+	r = _islower('H');
+	y = _islower('o');
+	u = _islower(108);
+
+	_putchar(r);
+	_putchar(y);
+	_putchar(u);
 	return (0);
 }
 

@@ -1,15 +1,20 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * main - Entry point
+ * _islower - checks for lowercase character
+ * @c: The charachter to check
  *
- * Return: Always 0 (Success)
+ * Return: 1 (lowercase) , or 0 (otherwise)
  */
 
-int main(void)
+int _islower(int c)
 {
-	
-	
-	return(0);
+	if (c >= 97 && c <= 122)
+	{
+		return (1);
+	}
+	else
+	{
+		return (0);
+	}
 }
-
