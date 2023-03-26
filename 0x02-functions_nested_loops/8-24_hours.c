@@ -1,15 +1,26 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * main - Entry point
+ * jack_bauer - every minute of the day of Jack Bauer
  *
- * Return: Always 0 (Success)
+ * Return: void
  */
 
-int main(void)
+void jack_bauer(void)
 {
-	
-	
-	return(0);
+	int hr, min;
+
+	for (hr = 0; hr < 24; hr++)
+	{
+		for (min = 0; min < 60; min++)
+		{
+			_putchar(hr / 10 + '0');
+			_putchar(hr % 10 + '0');
+			_putchar(':');
+			_putchar(min / 10 + '0');
+			_putchar(min % 10 + '0');
+			_putchar('\n');
+		}
+	}
 }
 
