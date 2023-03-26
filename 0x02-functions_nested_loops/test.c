@@ -8,12 +8,9 @@
 
 int main(void)
 {
-	int r,y;
-
-	r = _isalpha('H');
-	_putchar(r + '0');
-	y = _isalpha('u');
-	_putchar(y + '1');
+	print_sign(5);
+	print_sign(-4);
+	print_sign(0);
 	return (0);
 }
 
