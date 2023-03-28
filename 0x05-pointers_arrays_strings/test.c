@@ -9,8 +9,8 @@
 int main(void)
 {
 	char *str;
-    	str = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente libero, itaque aperiam veritatis alias et, iure quam pariatur ducimus quas! Reiciendis aspernatur sunt nulla deleniti, similique nesciunt natus vitae totam.";
-    puts2(str);
+      	str = "0123456789";
+	puts_half(str);
 	return (0);
 
 }
