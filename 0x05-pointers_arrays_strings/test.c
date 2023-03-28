@@ -8,11 +8,9 @@
 
 int main(void)
 {
-	char s[10] = "My School";
-
-   	printf("%s\n", s);
-    	rev_string(s);
-    	printf("%s\n", s);
+	char *str;
+    	str = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente libero, itaque aperiam veritatis alias et, iure quam pariatur ducimus quas! Reiciendis aspernatur sunt nulla deleniti, similique nesciunt natus vitae totam.";
+    puts2(str);
 	return (0);
 
 }
