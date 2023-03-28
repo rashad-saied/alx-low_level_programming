@@ -20,10 +20,10 @@ int _strlen(char *s)
 
 /**
  * _strcpy - copies the string to the buffer
- * @dest - the buffer pointer
- * @src - the string pointer
- * 
- * Return : char pointer
+ * @dest: the buffer pointer
+ * @src: the string pointer
+ *
+ * Return: char pointer
  */
 
 char *_strcpy(char *dest, char *src)
