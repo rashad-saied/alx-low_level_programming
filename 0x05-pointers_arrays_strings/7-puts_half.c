@@ -32,13 +32,10 @@ void puts_half(char *str)
 	int i;
 
 	length = _strlen(str);
+	middle_index = length / 2;
 	if (length % 2 != 0)
 	{
-		middle_index = (length - 1) / 2;
-	}
-	else
-	{
-		middle_index = length / 2;
+		middle_index++;
 	}
 	for (i = middle_index; i < length; i++)
 	{
