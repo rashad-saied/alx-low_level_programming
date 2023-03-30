@@ -19,18 +19,28 @@ int _strlen(char *s)
 }
 
 /**
- * _strcmp - compare two strings
- * @s1: the first string
- * @s2: the second string
+ * reverse_array - reverse an array
+ * @a: an array of integers
+ * @n: number of elements
  *
- * Return: char pointer
+ * Return: void
  */
 
-int _strcmp(char *s1, char *s2)
+void reverse_array(int *a, int n)
 {
-	int s1_len = _strlen(s1);
-	int s2_len = _strlen(s2);
+	int *start;
+	int *end;
 
-	return (s1_len - s2_len);
+	start = a;
+        end = a + n - 1;
+	while (start < end)
+	{
+		char temp = *start;
+		*start = *end;
+		*end = temp;
+		start++;
+		end--;
+	}
+
 }
 
