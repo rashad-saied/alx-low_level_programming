@@ -37,11 +37,11 @@ char *_strncat(char *dest, char *src, int n)
 	dest_length = _strlen(dest);
 	src_length = _strlen(src);
 
-	for (i = 0; i < n; i++)
+	for (i = 0; i < n && src[i] != '\0'; i++)
 	{
-		dest[dest_length] = src[i];
-		dest_length++;
+		dest[dest_length + i] = src[i];
 	}
+	dest[dest_length + i] = '\0';
 	return (dest);
 }
 
