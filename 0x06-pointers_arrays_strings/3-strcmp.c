@@ -28,9 +28,11 @@ int _strlen(char *s)
 
 int _strcmp(char *s1, char *s2)
 {
-	int s1_len = _strlen(s1);
-	int s2_len = _strlen(s2);
-
-	return (s1_len - s2_len);
+	while (*s1 && *s2 && (*s1 == *s2))
+	{
+		s1++;
+		s2++;
+	}
+	return (*s1 - *s2);
 }
 
