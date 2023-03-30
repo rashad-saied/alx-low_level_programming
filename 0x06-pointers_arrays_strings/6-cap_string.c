@@ -18,7 +18,9 @@ char *cap_string(char *str)
 
 	for (i = 0; str[i] != '\0'; i++)
 	{
-		if (isspace(str[i]) || ispunct(str[i]))
+		if (isspace(str[i]) || str[i] == ',' || str[i] == ';' || str[i] == '.' ||
+		str[i] == '!' || str[i] == '?' || str[i] == '"' || str[i] == '(' ||
+		str[i] == ')' || str[i] == '{' || str[i] == '}' || str[i] == '\t')
 		{
 			cap_next = 1;
 		}
