@@ -32,10 +32,8 @@ char *_strncat(char *dest, char *src, int n)
 {
 	int i;
 	int dest_length;
-	int src_length;
 
 	dest_length = _strlen(dest);
-	src_length = _strlen(src);
 
 	for (i = 0; i < n && src[i] != '\0'; i++)
 	{
