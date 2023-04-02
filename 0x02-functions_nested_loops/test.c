@@ -8,7 +8,7 @@
 
 int main(void)
 {
-	jack_bauer();
+	times_table();
 	return (0);
 }
 
