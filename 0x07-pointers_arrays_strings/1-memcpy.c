@@ -1,5 +1,4 @@
 #include "main.h"
-#include <string.h>
 
 /**
  * _memcpy - copies n of bytes from memory area to another
@@ -13,13 +12,13 @@
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
 	unsigned int i;
-	unsigned int dest_len;
+	/*unsigned int dest_len;*/
 
-	dest_len = strlen(dest);
+	/*dest_len = strlen(dest);*/
 	for (i = 0; i < n; i++)
 	{
-		dest[dest_len] = src[i];
-		dest_len++;
+		dest[i] = src[i];
+		/*dest_len++;*/
 	}
 	return (dest);
 }
