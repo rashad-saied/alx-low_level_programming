@@ -2,7 +2,7 @@
 #include <string.h>
 
 /**
- * prime_number_validation
+ * prime_number_validation - check if a number is a prime or not
  * @n: the number to be checked
  * @i: the divisor
  *
@@ -21,7 +21,7 @@ int prime_number_validation(int n, int i)
 }
 
 /**
- * prime_number_validation
+ * is_prime_number - check if a number is a prime or not
  * @n: the number to be checked
  *
  * Return: integer with the prime number
