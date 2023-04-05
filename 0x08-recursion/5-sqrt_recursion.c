@@ -12,8 +12,8 @@
 
 int square_root_shadow(int num, int min, int max)
 {
-	int guess;
-	int guess_square;
+	int long guess;
+	int long guess_square;
 
 	if (min > max)
 		return (-1);
