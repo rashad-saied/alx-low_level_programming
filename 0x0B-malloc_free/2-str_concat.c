@@ -15,25 +15,34 @@ char *str_concat(char *s1, char *s2)
 	char *ss;
 	int len_s1, len_s2, len_ss;
 
-	len_s1 = strlen(s1);
-	len_s2 = strlen(s2);
-	len_ss = len_s1 + len_s2;
 	if (s1 == NULL)
 	{
 		s1 = (char *) malloc(sizeof(char));
+		if (s1 == NULL)
+			return (NULL);
 		*s1 = '\0';
 	}
-	else if (s2 == NULL)
+	else
+	{
+		len_s1 = strlen(s1);
+	}
+	if (s2 == NULL)
 	{
 		s2 = (char *) malloc(sizeof(char));
+		if (s2 == NULL)
+			return (NULL);
 		*s2 = '\0';
 	}
+	else
+	{
+		len_s2 = strlen(s2);
+	}
+	len_ss = len_s1 + len_s2;
 	ss = (char *) malloc(sizeof(char) * (len_ss + 1));
 	if (ss == NULL)
 		return (NULL);
 	strcpy(ss, s1);
 	strcat(ss, s2);
-
 	return (ss);
 }
 
