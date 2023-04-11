@@ -12,17 +12,15 @@
 char *_strdup(char *str)
 {
 	char *cpy;
-	int i, len;
+	int len;
 
-	len = strlen(str);
-	cpy = (char *) malloc(sizeof(char) * len);
-	if (cpy == NULL || str == NULL)
+	if (str == NULL)
 		return (NULL);
-	for (i = 0; i < len; i++)
-	{
-		cpy[i] = str[i];
-	}
-	free(cpy);
+	len = strlen(str);
+	cpy = (char *) malloc(sizeof(char) * (len + 1));
+	if (cpy == NULL)
+		return (NULL);
+	strcpy(cpy, str);
 	return (cpy);
 }
 
