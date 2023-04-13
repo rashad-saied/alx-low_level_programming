@@ -25,7 +25,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	cast = loc;
 	for (i = 0; i < nmemb; i++)
 	{
-		*(cast + i) = 0;
+		*cast++ = 0;
 	}
 	return (loc);
 }
