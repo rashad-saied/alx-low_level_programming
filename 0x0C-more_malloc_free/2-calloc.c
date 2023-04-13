@@ -13,7 +13,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	void *loc;
 	unsigned int i;
-	unsigned int *cast;
+	unsigned char *cast;
 
 	if (nmemb == 0 || size == 0)
 	{
@@ -22,7 +22,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	loc = malloc(sizeof(size) * nmemb);
 	if (loc == NULL)
 		return (NULL);
-	cast = loc;
+	cast = (unsigned char *) loc;
 	for (i = 0; i < nmemb; i++)
 	{
 		*cast++ = 0;
