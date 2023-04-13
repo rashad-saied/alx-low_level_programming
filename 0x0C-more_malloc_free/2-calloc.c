@@ -19,7 +19,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	{
 		return (NULL);
 	}
-	loc = malloc(sizeof size * nmemb);
+	loc = malloc(sizeof(size) * nmemb);
 	if (loc == NULL)
 		return (NULL);
 	cast = loc;
