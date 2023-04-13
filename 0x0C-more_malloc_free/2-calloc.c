@@ -12,21 +12,20 @@
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	void *loc;
-	unsigned int i, j;
-	unsigned char *cast;
+	unsigned int i;
+	unsigned char *ptr;
 
 	if (nmemb == 0 || size == 0)
 	{
 		return (NULL);
 	}
-	j = nmemb * size;
-	loc = malloc(j);
+	loc = malloc(nmemb * size);
 	if (loc == NULL)
 		return (NULL);
-	cast = loc;
-	for (i = 0; i < j; i++)
+	ptr = loc;
+	for (i = 0; i < nmemb ; i++)
 	{
-		*(cast + i * size) = 0;
+		*(ptr + i * size) = 0;
 	}
 	return (loc);
 }
