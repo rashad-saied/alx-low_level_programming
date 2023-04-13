@@ -2,6 +2,15 @@
 #include <stdlib.h>
 #include <string.h>
 
+/**
+ * string_nconcat - concatenates two strings
+ * @s1: the first string
+ * @s2: the second string
+ * @n: the first elements of s2 string
+ *
+ * Return: a pointer to the new string
+ */
+
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *newString;
@@ -20,7 +29,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	s1_len = strlen(s1);
 	s2_len = strlen(s2);
 	total_length = s1_len + s2_len;
-	newString = malloc((sizeof *newString * total_length) + 1);
+	newString = malloc((sizeof(*newString) * total_length) + 1);
 	if (newString == NULL)
 		return (NULL);
 	newString = strcpy(newString, s1);
