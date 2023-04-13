@@ -14,7 +14,7 @@
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *newString;
-	unsigned int s1_len, s2_len, total_length, i;
+	unsigned int s1_len, s2_len, total_length;
 
 	if (s1 == NULL)
 	{
@@ -41,19 +41,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	newString = strcpy(newString, s1);
 	if (n >= s2_len)
 	{
-		for (i = 0; i <= s2_len; i++)
-		{
-			newString[s1_len] = s2[i];
-			s1_len++;
-		}
+		strcat(newString, s2);
 	}
 	else
 	{
-		for (i = 0; i <= n; i++)
-		{
-			newString[s1_len] = s2[i];
-			s1_len++;
-		}
+		strncat(newString, s2, n);
 	}
 	return (newString);
 }
