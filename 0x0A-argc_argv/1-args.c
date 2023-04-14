@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 
 /**
  * main - check the code for ALX School students.
@@ -10,7 +11,8 @@
 
 int main(int argc, char *argv[])
 {
-	printf("%d\n", argc);
+	_putchar('0' + argc);
+	_putchar('\n');
 	(void) argv;
 	return (0);
 }
