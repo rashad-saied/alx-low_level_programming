@@ -10,8 +10,8 @@
 
 void print_dog(struct dog *d)
 {
-	dog = malloc(sizeof(struct dog));
-	if (dog == NULL)
+	d = malloc(sizeof(struct dog));
+	if (d == NULL)
 		printf("");
 	if (d->name == NULL)
 	{
