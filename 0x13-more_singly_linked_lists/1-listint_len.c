@@ -9,7 +9,7 @@
 
 size_t listint_len(const listint_t *h)
 {
-	const list_t *curr;
+	const listint_t *curr;
 	size_t num;
 
 	if (h == NULL)
