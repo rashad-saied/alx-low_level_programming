@@ -20,8 +20,8 @@ void free_list(list_t *head)
 	{
 		free_node = curr;
 		curr = curr->next;
+		free(free_node->str);
 		free(free_node);
 	}
-	head = NULL;
 }
 
