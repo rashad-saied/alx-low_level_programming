@@ -30,6 +30,7 @@ size_t print_list(const list_t *h)
 			for (i = 0; i < 5; i++)
 				_putchar(nil[i]);
 			_putchar('\n');
+			exit(0);
 		}
 		else
 		{
