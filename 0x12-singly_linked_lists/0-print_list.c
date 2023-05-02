@@ -3,9 +3,10 @@
 #include <string.h>
 
 /**
-
-
-
+ * print_list -  prints all the elements of a list_t list.
+ * @h: the head node in the linked list
+ *
+ * Return: the number of nodes
  */
 
 size_t print_list(const list_t *h)
@@ -32,11 +33,10 @@ size_t print_list(const list_t *h)
 		}
 		else
 		{
-		
 			_putchar('[');
 			_putchar(curr->len + '0');
 			_putchar(']');
-			_putchar(' ');	
+			_putchar(' ');
 			for (i = 0; i < curr->len; i++)
 			{
 				_putchar(curr->str[i]);

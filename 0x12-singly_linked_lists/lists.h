@@ -1,9 +1,9 @@
-#include <stddef.h>
 #ifndef LISTS_H
 #define LISTS_H
+#include <stddef.h>
 
 /**
- * list_s: singly linked list
+ * struct list_s - singly linked list
  * @str: string - (malloc'd string)
  * @len: length of the string
  * @next: points to the next node
