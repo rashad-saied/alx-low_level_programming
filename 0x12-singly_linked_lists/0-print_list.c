@@ -11,13 +11,13 @@
 
 size_t print_list(const list_t *h)
 {
-	if (h == NULL)
-		return (0);
 	const list_t *curr;
 	unsigned int i;
 	size_t list_len;
 	char *nil;
 
+	if (h == NULL)
+		return (0);
 	nil = "(nil)";
 	list_len = 0;
 	curr = h;
